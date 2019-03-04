@@ -1711,6 +1711,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1920380224}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2022084936 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 129800, guid: 1d3b1a1513de66247974634911345b98,
+    type: 3}
+  m_PrefabInstance: {fileID: 1080321343}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2022084939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2022084936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a4b3577abea6584c85aa23df7feae65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
 --- !u!1 &2022281794
 GameObject:
   m_ObjectHideFlags: 0
@@ -1725,7 +1744,7 @@ GameObject:
   - component: {fileID: 2022281797}
   m_Layer: 0
   m_Name: player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
