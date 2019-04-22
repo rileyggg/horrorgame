@@ -22,7 +22,7 @@ public class suitMainAi : MonoBehaviour
             int layerMask = 1 << 8;
             layerMask = ~layerMask;
             RaycastHit Fronthit, Lefthit, Righthit;
-            if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out Fronthit, Mathf.Infinity, layerMask))
+            /*if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out Fronthit, Mathf.Infinity, layerMask))
             {
                 hitFront = true;
             }
@@ -58,11 +58,11 @@ public class suitMainAi : MonoBehaviour
                 }
 
                 //Quaternion theChange = new Quaternion(0.0f, 180.0f, 0.0f, 1.0f);
-            }
+            }*/
 
 
         }
-
+ 		Debug.Log("Calling transfom");
         transform.position += transform.forward * speed * Time.deltaTime;
     }
 }
