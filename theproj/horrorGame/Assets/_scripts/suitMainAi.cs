@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -22,7 +22,7 @@ public class suitMainAi : MonoBehaviour
             int layerMask = 1 << 8;
             layerMask = ~layerMask;
             RaycastHit Fronthit, Lefthit, Righthit;
-            /*if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out Fronthit, Mathf.Infinity, layerMask))
+            if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out Fronthit, Mathf.Infinity, layerMask))
             {
                 hitFront = true;
             }
@@ -53,16 +53,16 @@ public class suitMainAi : MonoBehaviour
                 }
                 else
                 {
-                    //transform.Rotate(0, 27, 0);
-                    Debug.Log("yo!");
+                    transform.Rotate(0, 225-Random.value*90, 0);
+                    //Debug.Log("yo!");
                 }
 
                 //Quaternion theChange = new Quaternion(0.0f, 180.0f, 0.0f, 1.0f);
-            }*/
+            }
 
 
         }
- 		Debug.Log("Calling transfom");
+ 		
         transform.position += transform.forward * speed * Time.deltaTime;
     }
 }
